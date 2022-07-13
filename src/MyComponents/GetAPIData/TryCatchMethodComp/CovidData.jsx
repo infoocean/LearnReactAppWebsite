@@ -5,6 +5,10 @@ import { Row, Col, Card } from 'react-bootstrap';
 export default function Fetchcoviddata() {
   const [mycoviddata, setmycoviddata] = useState([]);
 
+  useEffect(() => {
+    funGetMydata();
+  }, []);
+
   async function funGetMydata() {
     try {
       const result = await fetch('https://data.covid19india.org/data.json');
@@ -20,12 +24,7 @@ export default function Fetchcoviddata() {
       console.log(error);
     }
   }
-  useEffect(() => {
-    funGetMydata();
-  }, []);
-
   //console.log(mycoviddata);
-
   return (
     <Row className="pt-2 pb-2">
       <Col>

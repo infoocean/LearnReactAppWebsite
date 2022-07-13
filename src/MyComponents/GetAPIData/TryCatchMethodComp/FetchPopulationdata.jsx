@@ -3,13 +3,13 @@ import { useState, useEffect } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 
 export default function FetcPopulationdata() {
-  const [mydata, setmydata] = useState([]);
+  const [mypopulationdata, setmypopulationdata] = useState([]);
 
   useEffect(() => {
-    GetMydata();
+    GetMyPopulationdata();
   }, []);
 
-  async function GetMydata() {
+  async function GetMyPopulationdata() {
     const myapi =
       'https://datausa.io/api/data?drilldowns=Nation&measures=Population';
     try {
@@ -49,4 +49,3 @@ export default function FetcPopulationdata() {
     </Row>
   );
 }
-

@@ -55,17 +55,44 @@ export default function Header(props) {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/axiosmethod" className="dropdown-item" href="#">
+                    <Link to="/axiosmethod" className="dropdown-item">
                       Axios Method
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/trycatchmethod"
-                      className="dropdown-item"
-                      href="#"
-                    >
+                    <Link to="/trycatchmethod" className="dropdown-item">
                       Try Catch Method
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  React Form
+                </a>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <Link to="/reacthookform" className="dropdown-item">
+                      React Hook Form
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/reactformiK" className="dropdown-item">
+                      React Formik Library
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/reactreduxform" className="dropdown-item">
+                      React Redux Form
                     </Link>
                   </li>
                 </ul>

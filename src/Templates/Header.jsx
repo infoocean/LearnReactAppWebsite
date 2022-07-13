@@ -3,7 +3,10 @@ import React from 'react';
 export default function Header(props) {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <nav
+        className="navbar navbar-expand-lg navbar navbar-dark"
+        style={{ backgroundColor: 'rgb(7 17 26)' }}
+      >
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <b>Shubham</b>

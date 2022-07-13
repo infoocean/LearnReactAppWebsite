@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header(props) {
   return (
@@ -25,64 +26,47 @@ export default function Header(props) {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  {props.navitem1}
-                </a>
+                <Link to="/" className="nav-link active" aria-current="page">
+                  Home
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  {props.navitem2}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  {props.navitem3}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  {props.navitem4}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  {props.navitem5}
-                </a>
+                <Link to="/about" className="nav-link">
+                  About
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  {props.navitem6}
+                  Get API Data
                 </a>
                 <ul
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a className="dropdown-item" href="#">
-                      React Topics
-                    </a>
+                    <Link to="/fetchmethod" className="dropdown-item">
+                      Fetch Method
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      React UI Libraries
-                    </a>
+                    <Link to="/axiosmethod" className="dropdown-item" href="#">
+                      Axios Method
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      React Form Libraries
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      React Redux
-                    </a>
+                    <Link
+                      to="/trycatchmethod"
+                      className="dropdown-item"
+                      href="#"
+                    >
+                      Try Catch Method
+                    </Link>
                   </li>
                 </ul>
               </li>

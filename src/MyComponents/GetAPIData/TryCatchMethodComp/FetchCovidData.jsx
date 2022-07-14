@@ -4,6 +4,9 @@ import { Row, Col, Card } from 'react-bootstrap';
 
 function Fetchcoviddata() {
   const [mycoviddata, setmycoviddata] = useState([]);
+  const [mystatecoviddata, setmystatecoviddata] = useState([]);
+  const [Delhistatecoviddata, setDelhistatecoviddata] = useState([]);
+  const [Mumbaistatecoviddata, setMumbaistatecoviddata] = useState([]);
 
   useEffect(() => {
     funGetMycoviddata();
@@ -23,6 +26,9 @@ function Fetchcoviddata() {
         //console.log(Coviddata.statewise[1].state);
       }
       setmycoviddata(Coviddata);
+      setmystatecoviddata(Coviddata.statewise[20]); //Get MP covid data
+      setDelhistatecoviddata(Coviddata.statewise[9]); // get delhi covid data
+      setMumbaistatecoviddata(Coviddata.statewise[21]); // get mumbai state covid data
     } catch (error) {
       console.log(error);
     }
@@ -34,23 +40,77 @@ function Fetchcoviddata() {
   const statewisedata = mycoviddata.statewise;
   console.log(statewisedata);
   //console.log(typeof statewisedata);
+  console.log(mystatecoviddata);
+  console.log(Delhistatecoviddata);
+  console.log(Mumbaistatecoviddata);
 
   return (
     <>
       <Row className="pt-2 pb-2">
         <Col>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
             <Card.Body>
-              <Card.Title>{}</Card.Title>
+              <Card.Title>State Name: {mystatecoviddata.state}</Card.Title>
+              <Card.Text>state Code : {mystatecoviddata.statecode}</Card.Text>
+            </Card.Body>
+            <Card.Body>
+              <Card.Text>Active case : {mystatecoviddata.active}</Card.Text>
+              <Card.Text> Confirmed : {mystatecoviddata.confirmed}</Card.Text>
+              <Card.Text> Recorved : {mystatecoviddata.recovered}</Card.Text>
+              <Card.Text> Deaths : {mystatecoviddata.deaths}</Card.Text>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                {' '}
+                Updated Date : {mystatecoviddata.lastupdatedtime}
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card>
+            <Card.Body>
+              <Card.Title>State Name: {Delhistatecoviddata.state}</Card.Title>
+              <Card.Text>
+                state Code : {Delhistatecoviddata.statecode}
               </Card.Text>
             </Card.Body>
             <Card.Body>
-              <Card.Link href="#">Card Link</Card.Link>
-              <Card.Link href="#">Another Link</Card.Link>
+              <Card.Text>Active case : {Delhistatecoviddata.active}</Card.Text>
+              <Card.Text>
+                {' '}
+                Confirmed : {Delhistatecoviddata.confirmed}
+              </Card.Text>
+              <Card.Text> Recorved : {Delhistatecoviddata.recovered}</Card.Text>
+              <Card.Text> Deaths : {Delhistatecoviddata.deaths}</Card.Text>
+              <Card.Text>
+                {' '}
+                Updated Date : {Delhistatecoviddata.lastupdatedtime}
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card>
+            <Card.Body>
+              <Card.Title>State Name: {Mumbaistatecoviddata.state}</Card.Title>
+              <Card.Text>
+                state Code : {Mumbaistatecoviddata.statecode}
+              </Card.Text>
+            </Card.Body>
+            <Card.Body>
+              <Card.Text>Active case : {Mumbaistatecoviddata.active}</Card.Text>
+              <Card.Text>
+                {' '}
+                Confirmed : {Mumbaistatecoviddata.confirmed}
+              </Card.Text>
+              <Card.Text>
+                {' '}
+                Recorved : {Mumbaistatecoviddata.recovered}
+              </Card.Text>
+              <Card.Text> Deaths : {Mumbaistatecoviddata.deaths}</Card.Text>
+              <Card.Text>
+                {' '}
+                Updated Date : {Mumbaistatecoviddata.lastupdatedtime}
+              </Card.Text>
             </Card.Body>
           </Card>
         </Col>

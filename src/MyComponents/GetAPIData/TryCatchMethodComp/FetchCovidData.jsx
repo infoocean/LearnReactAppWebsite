@@ -32,7 +32,7 @@ function Fetchcoviddata() {
   //console.log(typeof mycoviddata);
   //console.log(mycoviddata.statewise);
   const statewisedata = mycoviddata.statewise;
-  //console.log(statewisedata);
+  console.log(statewisedata);
   //console.log(typeof statewisedata);
 
   return (

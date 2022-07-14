@@ -147,22 +147,23 @@ function FetchAllstatecoviddata() {
     <>
       <Row className="pt-2 pb-2">
         <h4 className="pt-2 pb-2"> Get All State Covid19 Data</h4>
-
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title></Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-            <Card.Body>
-              <Card.Text></Card.Text>
-              <Card.Text> </Card.Text>
-              <Card.Text> </Card.Text>
-              <Card.Text> </Card.Text>
-              <Card.Text></Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+        {statecoviddata.map((item, key) => {
+          <Col>
+            <Card>
+              <Card.Body>
+                <Card.Title>{item.state}</Card.Title>
+                <Card.Text></Card.Text>
+              </Card.Body>
+              <Card.Body>
+                <Card.Text></Card.Text>
+                <Card.Text> </Card.Text>
+                <Card.Text> </Card.Text>
+                <Card.Text> </Card.Text>
+                <Card.Text></Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>;
+        })}
       </Row>
     </>
   );

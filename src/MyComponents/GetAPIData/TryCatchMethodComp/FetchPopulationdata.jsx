@@ -18,14 +18,14 @@ export default function FetcPopulationdata() {
       const Nationdata = await res.json();
       //console.log(Nationdata);
       //console.log(typeof Nationdata);
-      setmydata(Nationdata);
+      setmypopulationdata(Nationdata);
     } catch (err) {
       console.log(err);
     }
   }
 
-  console.log(mydata);
-  console.log(mydata.data);
+  //console.log(mypopulationdata);
+  //console.log(mypopulationdata.data);
   //console.log(typeof mydata);
 
   return (

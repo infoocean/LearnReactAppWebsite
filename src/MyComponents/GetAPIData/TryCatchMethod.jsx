@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import Fetchcoviddata from '../../MyComponents/GetAPIData/TryCatchMethodComp/CovidData';
+import Fetchcoviddata from '../../MyComponents/GetAPIData/TryCatchMethodComp/FetchCovidData';
 import FetcPopulationdata from '../../MyComponents/GetAPIData/TryCatchMethodComp/FetchPopulationdata';
 
 export default function TryCatchMethod() {

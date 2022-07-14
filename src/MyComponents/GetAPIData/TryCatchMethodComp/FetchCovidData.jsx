@@ -38,11 +38,11 @@ function Fetchcoviddata() {
   //console.log(typeof mycoviddata);
   //console.log(mycoviddata.statewise);
   const statewisedata = mycoviddata.statewise;
-  console.log(statewisedata);
+  //console.log(statewisedata);
   //console.log(typeof statewisedata);
-  console.log(mystatecoviddata);
-  console.log(Delhistatecoviddata);
-  console.log(Mumbaistatecoviddata);
+  //console.log(mystatecoviddata);
+  //console.log(Delhistatecoviddata);
+  //console.log(Mumbaistatecoviddata);
 
   return (
     <>
@@ -118,5 +118,53 @@ function Fetchcoviddata() {
     </>
   );
 }
-
 export default Fetchcoviddata;
+
+function FetchAllstatecoviddata() {
+  const [statecoviddata, setstatecoviddata] = useState([]);
+
+  useEffect(() => {
+    funstatecoviddata();
+  }, []);
+
+  async function funstatecoviddata() {
+    try {
+      const myresult = await fetch('https://data.covid19india.org/data.json');
+      //console.log(myresult);
+      const stateCoviddata = await myresult.json();
+      //console.log(stateCoviddata);
+      //console.log(typeof stateCoviddata);
+      setstatecoviddata(stateCoviddata.statewise);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  //console.log(statecoviddata);
+  //console.log(typeof statecoviddata);
+
+  return (
+    <>
+      <Row className="pt-2 pb-2">
+        <h4 className="pt-2 pb-2"> Get All State Covid19 Data</h4>
+
+        <Col>
+          <Card>
+            <Card.Body>
+              <Card.Title></Card.Title>
+              <Card.Text></Card.Text>
+            </Card.Body>
+            <Card.Body>
+              <Card.Text></Card.Text>
+              <Card.Text> </Card.Text>
+              <Card.Text> </Card.Text>
+              <Card.Text> </Card.Text>
+              <Card.Text></Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </>
+  );
+}
+export { FetchAllstatecoviddata };

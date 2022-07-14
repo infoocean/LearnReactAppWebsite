@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Fetchcoviddata from '../../MyComponents/GetAPIData/TryCatchMethodComp/FetchCovidData';
+import { FetchAllstatecoviddata } from '../../MyComponents/GetAPIData/TryCatchMethodComp/FetchCovidData';
 import FetcPopulationdata from '../../MyComponents/GetAPIData/TryCatchMethodComp/FetchPopulationdata';
 
 export default function TryCatchMethod() {
@@ -19,6 +20,7 @@ export default function TryCatchMethod() {
             <div className="getchdata">
               {/* render component */}
               <Fetchcoviddata />
+              <FetchAllstatecoviddata />
             </div>
           </div>
           <div className="subtop mt-4">

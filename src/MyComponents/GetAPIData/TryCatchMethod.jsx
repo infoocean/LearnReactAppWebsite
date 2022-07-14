@@ -10,7 +10,8 @@ export default function TryCatchMethod() {
         <div className="heading">
           <div className="title">
             <h2 className="text-center">
-              Get Data From API Using Try Catch Method In ReactJs
+              Get Data From API Using Fetch Method with Try Catch statement In
+              ReactJs
             </h2>
           </div>
           <div className="subtop mt-4">

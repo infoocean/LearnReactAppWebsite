@@ -62,7 +62,7 @@ export default function Header(props) {
                     </li>
                     <li>
                       <Link to="/trycatchmethod" className="dropdown-item">
-                        Try Catch Method
+                        Fetch (with Try Catch stmt)
                       </Link>
                     </li>
                   </ul>

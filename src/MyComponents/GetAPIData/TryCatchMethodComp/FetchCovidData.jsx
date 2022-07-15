@@ -146,23 +146,21 @@ function FetchAllstatecoviddata() {
   return (
     <>
       <Row className="pt-2 pb-2">
-        <h4 className="pt-2 pb-2"> Get All State Covid19 Data</h4>
+        <h4 className="pt-4 pb-2">2) Get All State Covid19 Data</h4>
         {statecoviddata.map((item, key) => {
           return (
-            <Col>
-              <Card>
+            <Col className="col-lg-3 mt-4 ">
+              <Card id={key} className=" bg-light">
                 <Card.Body>
                   <Card.Title>
-                    {key}.State Name : {item.state}
+                    {key}. State Name : {item.state}
                   </Card.Title>
-                  <Card.Text></Card.Text>
+                  <Card.Text>State Code : {item.statecode}</Card.Text>
                 </Card.Body>
                 <Card.Body>
-                  <Card.Text></Card.Text>
-                  <Card.Text> </Card.Text>
-                  <Card.Text> </Card.Text>
-                  <Card.Text> </Card.Text>
-                  <Card.Text></Card.Text>
+                  <Card.Text>Confirmed Case : {item.confirmed}</Card.Text>
+                  <Card.Text> Deaths : {item.deaths}</Card.Text>
+                  <Card.Text>Updated Date : {item.lastupdatedtime} </Card.Text>
                 </Card.Body>
               </Card>
             </Col>

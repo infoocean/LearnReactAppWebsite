@@ -4,6 +4,7 @@ import Fetchcoviddata from '../../MyComponents/GetAPIData/TryCatchMethodComp/Fet
 import { FetchAllstatecoviddata } from '../../MyComponents/GetAPIData/TryCatchMethodComp/FetchCovidData';
 import FetchMekupBrandData from '../../MyComponents/GetAPIData/TryCatchMethodComp/FetchMekupBrandData';
 import FetcPopulationdata from '../../MyComponents/GetAPIData/TryCatchMethodComp/FetchPopulationdata';
+import FetchPersonData from '../../MyComponents/GetAPIData/TryCatchMethodComp/PublicList';
 
 export default function TryCatchMethod() {
   return (
@@ -36,6 +37,13 @@ export default function TryCatchMethod() {
             <div className="getchdata">
               {/* render component */}
               <FetchMekupBrandData />
+            </div>
+          </div>
+          <div className="subtop mt-4">
+            <h4>3) Get Top 5 person Name </h4>
+            <div className="getchdata">
+              {/* render component */}
+              <FetchPersonData />
             </div>
           </div>
         </div>

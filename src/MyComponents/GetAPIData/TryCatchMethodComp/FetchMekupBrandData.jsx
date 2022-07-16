@@ -25,6 +25,7 @@ export default function FetchMekupBrandData() {
   //console.log(typeof getmekupbrand);
 
   {
+    /*
     function myfunction(value, key) {
       return key;
     }
@@ -32,6 +33,7 @@ export default function FetchMekupBrandData() {
     //console.log(mydt);
     const dt = getmekupbrand.slice(0, 10).map(myfunction);
     //console.log(dt);
+    */
   }
 
   return (

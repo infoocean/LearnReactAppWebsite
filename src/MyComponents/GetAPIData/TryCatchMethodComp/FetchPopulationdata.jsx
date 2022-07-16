@@ -24,7 +24,7 @@ export default function FetcPopulationdata() {
       console.log(err);
     }
   }
-  console.log(mypopulationdata);
+  //console.log(mypopulationdata);
   //console.log(typeof mypopulationdata);
 
   {

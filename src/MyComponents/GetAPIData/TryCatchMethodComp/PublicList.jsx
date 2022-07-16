@@ -23,22 +23,40 @@ export default function FetchPersonData() {
   //console.log(getpersondata);
   //console.log(typeof getpersondata);
 
+  const dt = getpersondata.slice(0, 5).map((value, key) => {
+    if (key == 3) {
+      return 'poster';
+    } else {
+      return key;
+    }
+  });
+
+  console.log(dt);
+
   return (
     <Row className="pt-2 pb-2">
       {getpersondata.slice(0, 5).map((value, key) => {
-        return (
-          <Col className="col-lg-3 mt-4 ">
-            <Card>
-              <Card.Body>
-                <Card.Title>API : {value.API} </Card.Title>
-                <Card.Text>Category: {value.Category}</Card.Text>
-              </Card.Body>
-              <Card.Body>
-                <Card.Text>Cors : {value.Cors}</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        );
+        if (key === 3) {
+          return (
+            <Col className="col-lg-3 mt-4 ">
+              <Card id={key}>Addvertisement Poster</Card>
+            </Col>
+          );
+        } else {
+          return (
+            <Col className="col-lg-3 mt-4 ">
+              <Card id={key}>
+                <Card.Body>
+                  <Card.Title>API : {value.API} </Card.Title>
+                  <Card.Text>Category: {value.Category}</Card.Text>
+                </Card.Body>
+                <Card.Body>
+                  <Card.Text>Cors : {value.Cors}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          );
+        }
       })}
     </Row>
   );

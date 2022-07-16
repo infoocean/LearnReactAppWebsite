@@ -18,31 +18,36 @@ export default function FetcPopulationdata() {
       const Nationdata = await res.json();
       //console.log(Nationdata);
       //console.log(typeof Nationdata);
-      setmypopulationdata(Nationdata);
+      //console.log(Nationdata.data);
+      setmypopulationdata(Nationdata.data);
     } catch (err) {
       console.log(err);
     }
   }
   console.log(mypopulationdata);
-  console.log(typeof mypopulationdata);
+  //console.log(typeof mypopulationdata);
 
+  {
+    /*
+  const dt = mypopulationdata.map(myfun);
+  function myfun(value, key) {
+    return key;
+  }
+  console.log(dt);
+*/
+  }
   return (
     <Row className="pt-2 pb-2">
-      {mypopulationdata.data.map((item, key) => {
+      {mypopulationdata.map((item, key) => {
         return (
-          <Col>
+          <Col className="col-lg-3 mt-4">
             <Card>
-              <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
               <Card.Body>
-                <Card.Title>{}</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <Card.Title>Nation : {item.Nation}</Card.Title>
+                <Card.Text>Population : {item.Population}</Card.Text>
               </Card.Body>
               <Card.Body>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
+                <Card.Text>Year : {item.Year}</Card.Text>
               </Card.Body>
             </Card>
           </Col>

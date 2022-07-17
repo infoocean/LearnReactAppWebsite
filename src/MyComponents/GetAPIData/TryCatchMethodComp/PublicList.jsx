@@ -23,6 +23,8 @@ export default function FetchPersonData() {
   //console.log(getpersondata);
   //console.log(typeof getpersondata);
 
+  {
+    /*
   const dt = getpersondata.slice(0, 5).map((value, key) => {
     if (key == 3) {
       return 'poster';
@@ -30,8 +32,22 @@ export default function FetchPersonData() {
       return key;
     }
   });
+  //console.log(dt);
+*/
+  }
 
+  {
+    /*
+  const dt = getpersondata.slice(0, 10).map((value, key) => {
+    if (key != 3) {
+      return key;
+    } else {
+      return 'poster';
+    }
+  });
   console.log(dt);
+*/
+  }
 
   return (
     <Row className="pt-2 pb-2">

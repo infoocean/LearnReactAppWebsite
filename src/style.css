@@ -7,3 +7,30 @@ p {
 body {
   background-color: rgb(235, 240, 240);
 }
+
+.jumbotron {
+  background: linear-gradient(rgba(85, 78, 78, 0.8), rgba(116, 106, 106, 0.8)),
+    url(https://peerbits-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/the-benefits-of-reactjs-feature.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}

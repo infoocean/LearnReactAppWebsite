@@ -1,5 +1,6 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class Mainpage extends React.Component {
   render() {
@@ -20,7 +21,14 @@ class Mainpage extends React.Component {
                   </Accordion.Header>
                   <Accordion.Body>
                     <ul>
-                      <li style={{ textAlign: 'left' }}>React Introduction </li>
+                      <li as={Link} to="/" style={{ textAlign: 'left' }}>
+                        React Introduction{' '}
+                      </li>
+                      <li style={{ textAlign: 'left' }}>React Babel</li>
+                      <li style={{ textAlign: 'left' }}>React Webpack </li>
+                      <li style={{ textAlign: 'left' }}>React NPM </li>
+                      <li style={{ textAlign: 'left' }}>React NPX </li>
+                      <li style={{ textAlign: 'left' }}>React YARN </li>
                       <li style={{ textAlign: 'left' }}>React JSX </li>
                       <li style={{ textAlign: 'left' }}>React Props </li>
                       <li style={{ textAlign: 'left' }}>React States </li>

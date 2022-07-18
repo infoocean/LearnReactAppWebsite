@@ -52,6 +52,56 @@ class Mainpage extends React.Component {
                           </div>
                         </div>
                       </li>
+                      <li as={Link} to="/" style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React Installation</div>
+                          <div>
+                            <OverlayTrigger
+                              placement="top"
+                              delay={{ show: 250, hide: 400 }}
+                              overlay={renderTooltip}
+                            >
+                              <button
+                                type="button"
+                                class="btns btn-primary"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample"
+                              >
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                            </OverlayTrigger>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li as={Link} to="/" style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React Environment Setup</div>
+                          <div>
+                            <OverlayTrigger
+                              placement="top"
+                              delay={{ show: 250, hide: 400 }}
+                              overlay={renderTooltip}
+                            >
+                              <button
+                                type="button"
+                                class="btns btn-primary"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample"
+                              >
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                            </OverlayTrigger>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
                       <li style={{ textAlign: 'left' }}>
                         <div className="d-flex justify-content-between">
                           <div>React Babel</div>
@@ -90,6 +140,7 @@ class Mainpage extends React.Component {
                           </div>
                         </div>
                       </li>
+                      <li style={{ textAlign: 'left' }}>React Fragment </li>
                       <li style={{ textAlign: 'left' }}>React NPM </li>
                       <li style={{ textAlign: 'left' }}>React NPX </li>
                       <li style={{ textAlign: 'left' }}>React YARN </li>
@@ -97,7 +148,6 @@ class Mainpage extends React.Component {
                       <li style={{ textAlign: 'left' }}>React Props </li>
                       <li style={{ textAlign: 'left' }}>React States </li>
                       <li style={{ textAlign: 'left' }}>React Components </li>
-                      <li style={{ textAlign: 'left' }}>React Fragment </li>
                     </ul>
                   </Accordion.Body>
                 </Accordion.Item>

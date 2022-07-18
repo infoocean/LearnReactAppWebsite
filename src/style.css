@@ -34,3 +34,21 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
+
+ul li {
+  font-size: 15.5px;
+  padding-top: 7px;
+}
+
+.btns {
+  background-color: #2759c5;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 15%;
+  cursor: pointer;
+  margin-left: 20px;
+}

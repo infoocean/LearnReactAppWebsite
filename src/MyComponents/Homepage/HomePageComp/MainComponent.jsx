@@ -1,6 +1,12 @@
 import React from 'react';
-import { Accordion } from 'react-bootstrap';
+import { Accordion, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
+const renderTooltip = (props) => (
+  <Tooltip id="button-tooltip" {...props}>
+    View
+  </Tooltip>
+);
 
 class Mainpage extends React.Component {
   render() {
@@ -22,10 +28,68 @@ class Mainpage extends React.Component {
                   <Accordion.Body>
                     <ul>
                       <li as={Link} to="/" style={{ textAlign: 'left' }}>
-                        React Introduction{' '}
+                        <div className="d-flex justify-content-between">
+                          <div>React Introduction</div>
+                          <div>
+                            <OverlayTrigger
+                              placement="top"
+                              delay={{ show: 250, hide: 400 }}
+                              overlay={renderTooltip}
+                            >
+                              <button
+                                type="button"
+                                class="btns btn-primary"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample"
+                              >
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                            </OverlayTrigger>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
                       </li>
-                      <li style={{ textAlign: 'left' }}>React Babel</li>
-                      <li style={{ textAlign: 'left' }}>React Webpack </li>
+                      <li style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React Babel</div>
+                          <div>
+                            <button
+                              type="button"
+                              class="btns btn-primary"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasExample"
+                              aria-controls="offcanvasExample"
+                            >
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React Webpack</div>
+                          <div>
+                            <button
+                              type="button"
+                              class="btns btn-primary"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasExample"
+                              aria-controls="offcanvasExample"
+                            >
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
                       <li style={{ textAlign: 'left' }}>React NPM </li>
                       <li style={{ textAlign: 'left' }}>React NPX </li>
                       <li style={{ textAlign: 'left' }}>React YARN </li>
@@ -82,6 +146,20 @@ class Mainpage extends React.Component {
               </Accordion>
             </div>
           </div>
+        </div>
+        {/* off canvas comp*/}
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Offcanvas
+            </h5>
+          </div>
+          <div class="offcanvas-body"></div>
         </div>
       </>
     );

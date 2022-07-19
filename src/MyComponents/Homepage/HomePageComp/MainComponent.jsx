@@ -145,6 +145,7 @@ class Mainpage extends React.Component {
                       <li style={{ textAlign: 'left' }}>React NPX </li>
                       <li style={{ textAlign: 'left' }}>React YARN </li>
                       <li style={{ textAlign: 'left' }}>React JSX </li>
+                      <li style={{ textAlign: 'left' }}>React JSX Attribute</li>
                       <li style={{ textAlign: 'left' }}>React Props </li>
                       <li style={{ textAlign: 'left' }}>React States </li>
                       <li style={{ textAlign: 'left' }}>React Components </li>

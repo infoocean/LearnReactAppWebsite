@@ -79,7 +79,7 @@ class Mainpage extends React.Component {
                       </li>
                       <li as={Link} to="/" style={{ textAlign: 'left' }}>
                         <div className="d-flex justify-content-between">
-                          <div>React Environment Setup</div>
+                          <div>Environment Setup</div>
                           <div>
                             <OverlayTrigger
                               placement="top"

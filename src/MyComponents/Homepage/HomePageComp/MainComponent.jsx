@@ -23,7 +23,7 @@ class Mainpage extends React.Component {
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
-                    <b>Most Important React Topics</b>
+                    <b>React Topics For Beginner</b>
                   </Accordion.Header>
                   <Accordion.Body>
                     <ul>
@@ -155,27 +155,6 @@ class Mainpage extends React.Component {
               </Accordion>
             </div>
             <div class="col">
-              {' '}
-              <Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>
-                    <b>React Topics For Beginner</b>
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    <ul>
-                      <li style={{ textAlign: 'left' }}>React Introduction </li>
-                      <li style={{ textAlign: 'left' }}>React JSX </li>
-                      <li style={{ textAlign: 'left' }}>React Props </li>
-                      <li style={{ textAlign: 'left' }}>React States </li>
-                      <li style={{ textAlign: 'left' }}>React Components </li>
-                      <li style={{ textAlign: 'left' }}>React Fragment </li>
-                    </ul>
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
-            </div>
-            <div class="col">
-              {' '}
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
@@ -186,13 +165,100 @@ class Mainpage extends React.Component {
               </Accordion>
             </div>
             <div class="col">
-              {' '}
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
                     <b>React Hooks Topics</b>
                   </Accordion.Header>
                   <Accordion.Body></Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </div>
+            <div class="col">
+              <Accordion defaultActiveKey="0">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    <b>Most Important React Topics</b>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <ul>
+                      <li as={Link} to="/" style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React Hooks</div>
+                          <div>
+                            <OverlayTrigger
+                              placement="top"
+                              delay={{ show: 250, hide: 400 }}
+                              overlay={renderTooltip}
+                            >
+                              <button
+                                type="button"
+                                class="btns btn-primary"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample"
+                              >
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                            </OverlayTrigger>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li as={Link} to="/" style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React State</div>
+                          <div>
+                            <OverlayTrigger
+                              placement="top"
+                              delay={{ show: 250, hide: 400 }}
+                              overlay={renderTooltip}
+                            >
+                              <button
+                                type="button"
+                                class="btns btn-primary"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample"
+                              >
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                            </OverlayTrigger>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li as={Link} to="/" style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>Props</div>
+                          <div>
+                            <OverlayTrigger
+                              placement="top"
+                              delay={{ show: 250, hide: 400 }}
+                              overlay={renderTooltip}
+                            >
+                              <button
+                                type="button"
+                                class="btns btn-primary"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample"
+                              >
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                            </OverlayTrigger>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
             </div>

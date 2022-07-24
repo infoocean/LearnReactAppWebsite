@@ -266,7 +266,7 @@ class Mainpage extends React.Component {
         </div>
         <div className="text-center">
           <h2>
-            <b>Show All Javascript ES6 and Latest Version Topics</b>
+            <b>Show All Javascript ES5,6 and Latest Version Topics</b>
           </h2>
         </div>
         <div class="container-fluid text-center mt-5 mb-5">
@@ -275,13 +275,63 @@ class Mainpage extends React.Component {
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
-                    <b>Moders Javascript ES5, ES6 Topics</b>
+                    <b>Modern JS ES5,6 Avobe Version Topics</b>
                   </Accordion.Header>
                   <Accordion.Body>
                     <ul>
                       <li as={Link} to="/" style={{ textAlign: 'left' }}>
                         <div className="d-flex justify-content-between">
                           <div>Template Literals</div>
+                          <div>
+                            <OverlayTrigger
+                              placement="top"
+                              delay={{ show: 250, hide: 400 }}
+                              overlay={renderTooltip}
+                            >
+                              <button
+                                type="button"
+                                class="btns btn-primary"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample"
+                              >
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                            </OverlayTrigger>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li as={Link} to="/" style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>Import, Export Modules</div>
+                          <div>
+                            <OverlayTrigger
+                              placement="top"
+                              delay={{ show: 250, hide: 400 }}
+                              overlay={renderTooltip}
+                            >
+                              <button
+                                type="button"
+                                class="btns btn-primary"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample"
+                              >
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                            </OverlayTrigger>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li as={Link} to="/" style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>Arrow Functions</div>
                           <div>
                             <OverlayTrigger
                               placement="top"

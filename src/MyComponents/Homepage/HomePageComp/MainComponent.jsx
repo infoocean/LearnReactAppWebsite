@@ -140,15 +140,105 @@ class Mainpage extends React.Component {
                           </div>
                         </div>
                       </li>
-                      <li style={{ textAlign: 'left' }}>React Fragment </li>
+                      <li style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React Fragment</div>
+                          <div>
+                            <button
+                              type="button"
+                              class="btns btn-primary"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasExample"
+                              aria-controls="offcanvasExample"
+                            >
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
                       <li style={{ textAlign: 'left' }}>React NPM </li>
                       <li style={{ textAlign: 'left' }}>React NPX </li>
                       <li style={{ textAlign: 'left' }}>React YARN </li>
-                      <li style={{ textAlign: 'left' }}>React JSX </li>
-                      <li style={{ textAlign: 'left' }}>React JSX Attribute</li>
-                      <li style={{ textAlign: 'left' }}>React Props </li>
+                      <li style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React JSX </div>
+                          <div>
+                            <button
+                              type="button"
+                              class="btns btn-primary"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasExample"
+                              aria-controls="offcanvasExample"
+                            >
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React JSX Attribute </div>
+                          <div>
+                            <button
+                              type="button"
+                              class="btns btn-primary"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasExample"
+                              aria-controls="offcanvasExample"
+                            >
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React Props </div>
+                          <div>
+                            <button
+                              type="button"
+                              class="btns btn-primary"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasExample"
+                              aria-controls="offcanvasExample"
+                            >
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
                       <li style={{ textAlign: 'left' }}>React States </li>
-                      <li style={{ textAlign: 'left' }}>React Components </li>
+                      <li style={{ textAlign: 'left' }}>
+                        <div className="d-flex justify-content-between">
+                          <div>React Components </div>
+                          <div>
+                            <button
+                              type="button"
+                              class="btns btn-primary"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasExample"
+                              aria-controls="offcanvasExample"
+                            >
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button type="button" class="btns btn-primary">
+                              <i class="fa-solid fa-check"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
                     </ul>
                   </Accordion.Body>
                 </Accordion.Item>
